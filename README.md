@@ -1,14 +1,20 @@
 # hackathon_apis
 Download the zip file or code
+
 cd to root folder
+
 cd hackathonapp
+
 python manage.py makemigrations hackathonapi
+
 python manage.py migrate
 
 Create superuser
+
 python manage.py createsuperuser
 
 then run the application
+
 python manage.py runserver
 
 Following are the urls for the website
