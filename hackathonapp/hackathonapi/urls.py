@@ -10,7 +10,7 @@ router.register(r'hackathons/(?P<hackathon_id>\d+)/registrations', ParticipantRe
 
 urlpatterns = [
     path('',HackathonList.as_view(), name='hackathon_list'),
-    path('create-hackathons',HackathonListCreate.as_view()),
+    path('create-hackathons/',HackathonListCreate.as_view()),
     path('submissions/', SubmissionListCreate.as_view()),
     path('', include(router.urls)),
     path('enrolled-hackathons/', EnrolledHackathonListView.as_view(), name='enrolled_hackathons'),
